@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pkg install -y python2 python3 git
+pkg install -y python2 python3 git vim
 pip install -y python-websockify
 mkdir -p .termux/tasker/
 cd .termux/tasker/
