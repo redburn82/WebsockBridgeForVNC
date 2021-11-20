@@ -44,9 +44,9 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 > 이렇게 하면 폰에 Tesla 브라우져에서 읽을 수 있는 유일한 Private IP(로 추정되는) *3.3.3.3* 이 부여가 되게 됩니다.
 
 
-
-<img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/2.jpg" alt="2" style="zoom:40%;" />
-
+<p align="center">
+<img align="center" src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/2.jpg" width="40%" height="40%">
+</p>
 
 
 이 URL은 다른 서비스에서도 함께 사용할 수 있는데 저희는 Scr Mirror의 접근주소로 위에서 얻은 3.3.3.3을 사용할 것입니다.
@@ -90,9 +90,9 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
       - 세번째로 화면 녹화/전송 권한을 요청합니다. 이 권한은 브라우져로 화면을 전송하기 위해 필요합니다.
 
 
-
-<img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/3.jpg" alt="3" style="zoom:40%;" />
-
+<p align="center">
+<img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/3.jpg"  width="40%" height="40%">
+</p>
 
 
 - **[2 단계] 원격접속 앱을 web서비스로 바꿔줄 수 있는 브릿지 만들기 **
@@ -112,9 +112,9 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
     
 
   - **termux 앱을 켜서 위에서 복사한 커맨드를 붙여넣습니다.** 자동으로 필요한 모듈을 설치하면서 동작할 준비를 하게 됩니다.
-
-    <img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/4.jpg" alt="4" style="zoom:40%;" />
-
+    <p align="center"> 
+    <img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/4.jpg"  width="40%" height="40%">
+    </p>
     
 
   - (테스트) 설치가 끝난뒤 **아래의 커맨드**를 붙여넣고 엔터를 누릅니다. 결과가 아래처럼 나오면 준비는 끝난 걸로 보시면 됩니다.
@@ -122,9 +122,9 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
     ```bash
     .termux/tasker/noVNC/utils/novnc_proxy --vnc 127.0.0.1:5901
     ```
-
-    ![5](https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/5.png)
-
+    <p align="center">
+    <img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/5.png">
+    </p>
     
 
   - (테스트2) 이제 웹으로 접속해보겠습니다.  **테슬라 브라우져에서 아래와 같은 주소를 입력**합니다. 
@@ -139,9 +139,9 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
     - 제가 쓰고 있는 구형 zflip은 세로비가 너무 길어서 scale size를 35% 정도까지 맞춰줘야 합니다. 일반적인폰이라면 40%~50% 사이면 브라우져 화면에 세로가 꽉 차게 출력 되실 겁니다.
 
   - vnc client 설정을 한번은 해주고 넘어가겠습니다. 브라우저 화면 왼쪽 구석에 있는 메뉴를 눌러서 들어갑니다.
-
-    ![6](https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/6.png)
-
+    <p align="center"> 
+    <img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/6.png">
+    </p>
     - Quality는 낮을 수록 Compression level은 높을 수록 전송에 여유가 생깁니다. 적당한 수준에서 조절해주세요. 저는 카톡 알림 글자가 확인되는 선에 맞춰두고 사용하고 있습니다.
 
       
@@ -165,9 +165,9 @@ https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/mai
 그리고 `MacroDroid - Device Automation` 를 켜서 아래와 같은 순서로 메뉴를 선택합니다.
 
 방금 다운받았던 `main.macro` 파일을 import 합니다.
-
-![7](https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/7.png)
-
+<p align="center">
+<img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/7.png">
+</p>
 저같은 경우는 아래와 같이 세팅되어 있습니다.
 
 - (조건) 무선/유선 충전중 + Tesla 차량 bluetooth에 연결
@@ -176,8 +176,9 @@ https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/mai
   - DroidVNC-NG 앱 켜기는 빼셔도 됩니다. 저같은 경우는 screen capture 권한을 쓸때만 주려고 항상 꺼두기 때문에 사용전에 앱을 켜서 새로 Start를 눌러주는 편입니다.
 
 
-
-<img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/8.jpg" alt="8" style="zoom:40%;" />
+<p align="center">
+<img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/8.jpg"  width="40%" height="40%">
+</p>
 
 # 4. 알아두기
 
