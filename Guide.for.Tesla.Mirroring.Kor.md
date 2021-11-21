@@ -129,7 +129,7 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
   - :heavy_check_mark: (테스트) 설치가 끝난뒤 **아래의 커맨드**를 붙여넣고 엔터를 누릅니다.(말풍선 클릭시 자동 복사). 결과가 아래처럼 나오면 준비는 끝난 걸로 보시면 됩니다.
 
     ```bash
-    .termux/tasker/noVNC/utils/novnc_proxy --vnc 127.0.0.1:5901
+    noVNC/utils/novnc_proxy --vnc 127.0.0.1:5901
     ```
     <p align="center">
     <img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/5.png">
