@@ -47,9 +47,9 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
 그리고 TeslaA 가 정상적으로 실행될 수 있도록 아래 링크로 PlayStore에서 Android Auto 다운 받고 기타 필요하다고 하는 앱들 함께 받아줍니다.
 
-- [ ] 플레이스토어 링크 : https://play.google.com/store/apps/details?id=com.google.android.projection.gearhead
-
-- [ ] 안드로이드 Auto가 정상적으로 실행될 수 없으면 TeslaA도 역시 함께 문제가 생길 가능성이 많으므로 필요한 파일 다운 및 권한 요청 승인을 꼼꼼히 해줍니다.
+- [ ] 플레이스토어 링크(AndroidAuto) : https://play.google.com/store/apps/details?id=com.google.android.projection.gearhead
+  - 안드로이드 Auto가 정상적으로 실행될 수 없으면 TeslaA도 역시 함께 문제가 생길 가능성이 많으므로 필요한 파일 다운 및 권한 요청 승인을 꼼꼼히 해줍니다.
+- [ ] 플레이스토어 링크(TeslaA,유료) : https://play.google.com/store/apps/details?id=it.cpeb.teslaa
 
 확인은 어떻게 하느냐? 간단합니다. 차에서 TeslaA가 켜지면 필요한 환경은 준비된 것으로 보시면 됩니다.
 
