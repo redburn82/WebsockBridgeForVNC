@@ -172,12 +172,15 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
 :heavy_check_mark: 매크로템플릿 다운로드: https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/main.macro
 
-그리고 `MacroDroid - Device Automation` 를 켜서 아래와 같은 순서로 메뉴를 선택합니다.
+:heavy_check_mark: 파일 다운 받았을 때 '열기'링크가 뜨고 링크 눌렀을 때 `MacroDroid - Device Automation` 앱(뭔가 알록달록합니다)가 바로 뜨시는 분들은 화면 오른쪽 아래 "+"같은 둥근 메뉴를 눌러주고 바로 아래의 import 단계를 넘어가시면 됩니다.
 
-방금 다운받았던 `main.macro` 파일을 import 합니다.
+:heavy_check_mark: 만약에 바로 열기로 연결이 안되시는 분들은 `MacroDroid - Device Automation` 를 켜서 아래와 같은 순서로 메뉴를 선택합니다.
+
+방금 다운받았던 어쩔수 없습니다. 아래와 같이 매뉴얼로 `main.macro` 파일을 import 합니다.
 <p align="center">
 <img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/7.png">
 </p>
+
 저같은 경우는 아래와 같이 세팅되어 있습니다.
 
 - (조건) 무선/유선 충전중 + Tesla 차량 bluetooth에 연결
