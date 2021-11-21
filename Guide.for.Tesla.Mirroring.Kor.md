@@ -1,4 +1,4 @@
-**※ 안드로이드에서만 확인된 내용입니다. 정확하진 않지만 아이폰 유저분께서는 아마 사용이 어려우실 것으로 같습니다.**
+**※ 안드로이드에서만 동작이 확인된 내용입니다.**
 
 **※ 모바일페이지에 적절하도록 작성된 페이지로, PC 브라우져에서 보시면 이미지가 너무 크게 느껴지실 수 있습니다.**
 
@@ -75,27 +75,27 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
 # 2. 원격접속용 Web Service
 
-- **[1단계] 우선 원격접속을 지원해줄 수 있는 앱을 하나 받습니다. **
+**[1단계]: 우선 원격접속을 지원해줄 수 있는 앱을 하나 받습니다.**
 
-  - 현재 버그가 하나 있어 project owner에게 리포팅했고 패치가 나왔으나 아직 Play Store에는 등록 전입니다.
+- 현재 버그가 하나 있어 project owner에게 리포팅했고 패치가 나왔으나 아직 Play Store에는 등록 전입니다.
 
-  - 우선은 project owner가 직접 release한 apk 주소를 올려놓을 테니 지금은 **아래 url에서 받은 apk를 직접 설치**해 주세요.
+- 우선은 project owner가 직접 release한 apk 주소를 올려놓을 테니 지금은 **아래 url에서 받은 apk를 직접 설치**해 주세요.
 
-    :heavy_check_mark: 다운로드링크 : https://github.com/bk138/droidVNC-NG/releases/download/v1.2.4/droidvnc-ng-1.2.4.apk
+  :heavy_check_mark: 다운로드링크 : https://github.com/bk138/droidVNC-NG/releases/download/v1.2.4/droidvnc-ng-1.2.4.apk
 
-    - 이 apk는 **절대 아무데서나 받으시면 안됩니다.** 오픈소스인데다가 스크린캡쳐권한과 터치제스쳐를 생성할 수 있는 권한을 동시에 요구하므로 악의적으로 변형된 apk를 잘못받으시면 치명적일 수 있습니다.  
-    - 해당 patch가 정식으로 플레이스토어 버전에 올라가면 바로 플레이스토어 리다이렉트 URL로 수정할 예정입니다.
+  - 이 apk는 **절대 아무데서나 받으시면 안됩니다.** 오픈소스인데다가 스크린캡쳐권한과 터치제스쳐를 생성할 수 있는 권한을 동시에 요구하므로 악의적으로 변형된 apk를 잘못받으시면 치명적일 수 있습니다.  
+  - 해당 patch가 정식으로 플레이스토어 버전에 올라가면 바로 플레이스토어 리다이렉트 URL로 수정할 예정입니다.
 
-  - 세팅은 아래 그림 참고해서 부탁드립니다.
+- 세팅은 아래 그림 참고해서 부탁드립니다.
 
-    - :heavy_check_mark: Port번호 5901은 고정이며, password는 비워둡니다.
-      - 내부망에서만 노출될 서비스이므로 password는 비워두는게 편합니다.
-    - Scaling은 우선 50% 정도로 맞추고 넘어가주세요.
-    - :heavy_check_mark: **최초로 Start 버튼을 누르면 몇가지 권한을 요청**합니다. 모두 허용해주셔야 합니다.
-      - 첫째로 접근성 권한을 요청합니다. 브라우져에서 받은 입력을 폰에서 다시 만들어내기 위해 필요한 옵션입니다.
-        - 자동으로 접근성 메뉴로 redirect 됩니다. 어중간한 상태로 넘겨줘서 헛갈리는데 여기서 **설치된 서비스 >> droidVNC-NG** 를 사용으로 체크해주시면 됩니다.
-      - 두번째로 file access 권한을 요청하는데 이는 안주고 넘어가셔도 무방합니다.
-      - 세번째로 화면 녹화/전송 권한을 요청합니다. 이 권한은 브라우져로 화면을 전송하기 위해 필요합니다.
+  - :heavy_check_mark: Port번호 5901은 고정이며, password는 비워둡니다.
+    - 내부망에서만 노출될 서비스이므로 password는 비워두는게 편합니다.
+  - Scaling은 우선 50% 정도로 맞추고 넘어가주세요.
+  - :heavy_check_mark: **최초로 Start 버튼을 누르면 몇가지 권한을 요청**합니다. 모두 허용해주셔야 합니다.
+    - 첫째로 접근성 권한을 요청합니다. 브라우져에서 받은 입력을 폰에서 다시 만들어내기 위해 필요한 옵션입니다.
+      - 좀 헛갈리는데 여기서 **설치된 서비스 >> droidVNC-NG** 를 사용으로 체크해주시면 됩니다.
+    - 두번째로 file access 권한을 요청하는데 이는 안주고 넘어가셔도 무방합니다.
+    - 세번째로 화면 녹화/전송 권한을 요청합니다. 이 권한은 브라우져로 화면을 전송하기 위해 필요합니다.
 
 
 <p align="center">
@@ -105,28 +105,24 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
 
 
-- **[2 단계] 원격접속 앱을 web서비스로 바꿔줄 수 있는 브릿지 만들기**
-  - noVNC라는 nodejs기반 앱이 원격접속을 web 서비스로 바꿔줄 수 있습니다.
+**[2 단계]: 원격접속 앱을 web서비스로 바꿔줄 수 있는 브릿지 만들기**
+- noVNC라는 nodejs기반 앱이 원격접속을 web 서비스로 바꿔줄 수 있습니다.
 
-  - 폰 내부에서 이 기능을 사용하기 위해 termux라는 앱을 플레이스토어에서 내려받습니다.
+- 폰 내부에서 이 기능을 사용하기 위해 termux라는 앱을 플레이스토어에서 내려받습니다.
+:heavy_check_mark: 플레이스토어링크: https://play.google.com/store/apps/details?id=com.termux
 
-    - :heavy_check_mark: 플레이스토어링크: https://play.google.com/store/apps/details?id=com.termux
-
-  - :heavy_check_mark: **아래의 커맨드를 복사**합니다.(말풍선 클릭시 자동 복사). playstore 앱에 문제가 있어 이를 해결하기 위해 커맨드가 좀 길어졌지만 별 상관은 없으니 그대로 복사해주세요.
+- :heavy_check_mark: **아래의 커맨드를 복사**합니다.(말풍선 클릭시 자동 복사). playstore 앱에 문제가 있어 이를 해결하기 위해 커맨드가 좀 길어졌지만 별 상관은 없으니 그대로 복사해주세요.
 
     ```bash
     apt update ; apt -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef -y upgrade  && curl -s -L https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/run.sh | bash
     ```
 
-
-
-  - :heavy_check_mark: **가장 중요한 작업입니다. termux 앱을 켜서 위에서 복사한 커맨드를 붙여넣습니다.** 자동으로 필요한 모듈을 설치하면서 동작할 준비를 하게 됩니다.
+- :heavy_check_mark: **가장 중요한 작업입니다. termux 앱을 켜서 위에서 복사한 커맨드를 붙여넣습니다.** 자동으로 필요한 모듈을 설치하면서 동작할 준비를 하게 됩니다.
     <p align="center"> 
     <img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/4.jpg">
     </p>
-    
 
-  - :heavy_check_mark: (테스트) 설치가 끝난뒤 **아래의 커맨드**를 붙여넣고 엔터를 누릅니다.(말풍선 클릭시 자동 복사). 결과가 아래처럼 나오면 준비는 끝난 걸로 보시면 됩니다.
+- :heavy_check_mark: (테스트) 설치가 끝난뒤 **아래의 커맨드**를 붙여넣고 엔터를 누릅니다.(말풍선 클릭시 자동 복사). 결과가 아래처럼 나오면 준비는 끝난 걸로 보시면 됩니다.
 
     ```bash
     noVNC/utils/novnc_proxy --vnc 127.0.0.1:5901
@@ -134,25 +130,21 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
     <p align="center">
     <img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/5.png">
     </p>
-    
 
-  - :heavy_check_mark: (테스트2) 이제 웹으로 접속해보겠습니다.  **테슬라 브라우져에서 아래와 같은 주소를 입력**합니다.
+
+- :heavy_check_mark: (테스트2) 이제 웹으로 접속해보겠습니다.  **테슬라 브라우져에서 아래와 같은 주소를 입력**합니다. 이건 필수는 아닙니다. 화면 크기 조정해서 브라우저에 맞추는 작업으로 나중에 사용하시면 조정하셔도 됩니다.
 
     ```
      3.3.3.3:6080/vnc.html
     ```
+  - :heavy_check_mark: 저희가 정한 scale size(=50%)에서 폰화면 전체가 잘려서 나오면 scale size가 너무 큰 것이니 좀 더 작게 조정해주세요.
+  - 제가 쓰고 있는 구형 zflip은 세로비가 너무 길어서 scale size를 35% 정도까지 맞춰줘야 합니다. 일반적인폰이라면 40%~50% 사이면 브라우져 화면에 세로가 꽉 차게 출력 되실 겁니다.
 
-    > 3.3.3.3 url에서 찍은 실물 사진
-
-    - :heavy_check_mark: 저희가 정한 scale size(=50%)에서 폰화면 전체가 잘려서 나오면 scale size가 너무 큰 것이니 좀 더 작게 조정해주세요.
-    - 제가 쓰고 있는 구형 zflip은 세로비가 너무 길어서 scale size를 35% 정도까지 맞춰줘야 합니다. 일반적인폰이라면 40%~50% 사이면 브라우져 화면에 세로가 꽉 차게 출력 되실 겁니다.
-
-  - :heavy_check_mark: vnc client 설정을 한번은 해주고 넘어가겠습니다. 브라우저 화면 왼쪽 구석에 있는 메뉴를 눌러서 들어갑니다.
+- :heavy_check_mark: vnc client 설정을 한번은 해주고 넘어가겠습니다. 브라우저 화면 왼쪽 구석에 있는 메뉴를 눌러서 들어갑니다.
     <p align="center"> 
     <img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/6.png">
     </p>
     - Quality는 낮을 수록 Compression level은 높을 수록 전송에 여유가 생깁니다. 적당한 수준에서 조절해주세요. 저는 카톡 알림 글자가 확인되는 선에 맞춰두고 사용하고 있습니다.
-
       
 
 # 3. 자동화
@@ -165,7 +157,6 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
 - :heavy_check_mark: 플레이스토어링크(MacroDroid): https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid
 - :heavy_check_mark: 플레이스토어링크(Termux: Tasker,유료): https://play.google.com/store/apps/details?id=com.termux.tasker
-  > 특정 조건이 되면 다른 자동화툴들(대표적으로 삼성 루틴+ 나 Tasker 등)과 같이 뭔가를 실행할 수 있는데, Termux: Tasker 플러그인을 통해 자동으로 Web 기반 서비스 브릿지를 실행하게 합니다.
 
 좀 더 편리하게 사용하실 수 있도록 macro templete 함께 공유드립니다.
 우선 **아래있는 파일을 다운 받아주세요.**
@@ -221,4 +212,4 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
 ### 마치는 말.
 
-원래는 tesla usb + ssh tunnel 이용한 센트리 영상 전송도 포함되어 있었고 처음에는 이런 기능들 다 통합해서 앱으로 짤까도 생각해봤었습니다,  하지만 최근에 센트리 모드 영상 온라인 전송이 정식으로 업데이트에 합류하는 것을 보고 그정도의 노력을 들일만한 가치가 있는가 고민이 되더라구요. 사실 지금 한국에 이런형태의 사제 인포테인먼트 시스템이 필요한 건 **네비가 너무 이상해서** 가 제일 큰 이유인데, 사실 네비는 집중하면 금새 정리될 것 으로 생각됩니다. 그렇게 되면 이런 teslamirror, teslaa , 이 프로젝트 등 모든 사제 인포테인먼트 시스템은 바로 의미가 상실될 거구요. 그래서 일단 있는것들 잘 조합해서 정식 시스템 발행 전까진 적당히 쓸 툴로 방향을 바꾸게 되었구요. droidvnc쪽은 owner분 께 이미 몇가지 이슈 리포팅 및 코드리뷰도 했었던 등 일부 개선이 있을 수는 있겠지만 상용 제품 수준의 진행은 현재로서는 약속드릴 상황은 아님을 이해부탁드립니다.
+원래는 tesla usb + ssh tunnel 이용한 센트리 영상 전송도 포함되어 있었고 처음에는 이런 기능들 다 통합해서 앱으로 짤까도 생각해봤었습니다,  하지만 최근에 센트리 모드 영상 온라인 전송이 정식으로 업데이트에 합류하는 것을 보고 그정도의 노력을 들일만한 가치가 있는가 고민이 되더라구요. 결국 네비가 좋아지거나 개선된 인포테인먼트 시스템이 나올 때까지만 사용할 임시 프로젝트로 방향을 틀게 되었습니다. 일부 개선이 있을 수는 있겠지만 상용 제품 수준의 진행은 현재로서는 약속드리기 어려운 상황임을 .
