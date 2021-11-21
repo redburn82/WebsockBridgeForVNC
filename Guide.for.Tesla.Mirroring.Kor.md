@@ -161,8 +161,8 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
 이부분을 자동화 하기 위해 `MacroDroid - Device Automation`라는 앱과 `Termux: Tasker`라는 유료앱(￦2500) 을 설치 합니다.
 
-- - [] 플레이스토어링크(MacroDroid): https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid
-- - [] 플레이스토어링크(Termux: Tasker,유료): https://play.google.com/store/apps/details?id=com.termux.tasker
+- - [ ] 플레이스토어링크(MacroDroid): https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid
+- - [ ] 플레이스토어링크(Termux: Tasker,유료): https://play.google.com/store/apps/details?id=com.termux.tasker
   > 특정 조건이 되면 다른 자동화툴들(대표적으로 삼성 루틴+ 나 Tasker 등)과 같이 뭔가를 실행할 수 있는데, Termux: Tasker 플러그인을 통해 자동으로 Web 기반 서비스 브릿지를 실행하게 합니다.
 
 좀 더 편리하게 사용하실 수 있도록 macro templete 함께 공유드립니다.
