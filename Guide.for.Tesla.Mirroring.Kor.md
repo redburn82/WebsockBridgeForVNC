@@ -2,7 +2,7 @@
 
 **※ 모바일페이지에 적절하도록 작성된 페이지로, PC 브라우져에서 보시면 이미지가 너무 크게 느껴지실 수 있습니다.**
 
-**※ 어려운 내용은 많지만 처리하고 넘어가야할 단계가 많습니다. 주요 진행 단계에 달아둔 체크박스에 표시해가며 진행하세요.**
+**※ 어려운 내용은 많지만 처리하고 넘어가야할 단계가 많습니다. :heavy_check_mark: 가 보이는 라인은 뭔가 하셔야 한다는 의미 입니다.**
 
 ---
 
@@ -37,19 +37,20 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
 여러가지 방법이 있겠지만 이쪽은 최근 안드로이드 플레이스토에어 Teslaa가 등장하였기 때문에 매우 간단해졌습니다. 
 
-- [ ] 별도 장비나 루팅된 스마트폰 같은 것들 모두 필요 없습니다. **단지 6500원 지불하시고 Teslaa를  구매**하시면 됩니다.
+- :heavy_check_mark: 별도 장비나 루팅된 스마트폰 같은 것들 모두 필요 없습니다. **단지 6500원 지불하시고 Teslaa를  구매**하시면 됩니다.
 
 
 
-- [ ] 아래처럼 Teslaa 컨트롤 패널에서 **Setup VPN 스위치를 켜주세요.** 
+- :heavy_check_mark: 아래처럼 Teslaa 컨트롤 패널에서 **Setup VPN 스위치를 켜주세요.** 
 
-  > 이렇게 하면 폰에 Tesla 브라우져에서 읽을 수 있는 유일한 Private IP(로 추정되는) *3.3.3.3* 이 부여가 되게 됩니다.
+    > 이렇게 하면 폰에 Tesla 브라우져에서 읽을 수 있는 유일한 Private IP(로 추정되는) *3.3.3.3* 이 부여가 되게 됩니다.
 
 그리고 TeslaA 가 정상적으로 실행될 수 있도록 아래 링크로 PlayStore에서 Android Auto 다운 받고 기타 필요하다고 하는 앱들 함께 받아줍니다.
 
-- [ ] 플레이스토어 링크(AndroidAuto) : https://play.google.com/store/apps/details?id=com.google.android.projection.gearhead
-  - 안드로이드 Auto가 정상적으로 실행될 수 없으면 TeslaA도 역시 함께 문제가 생길 가능성이 많으므로 필요한 파일 다운 및 권한 요청 승인을 꼼꼼히 해줍니다.
-- [ ] 플레이스토어 링크(TeslaA,유료) : https://play.google.com/store/apps/details?id=it.cpeb.teslaa
+:heavy_check_mark: 플레이스토어 링크(AndroidAuto) : https://play.google.com/store/apps/details?id=com.google.android.projection.gearhead
+  > 안드로이드 Auto가 정상적으로 실행될 수 없으면 TeslaA도 역시 함께 문제가 생길 가능성이 많으므로 필요한 파일 다운 및 권한 요청 승인을 꼼꼼히 해줍니다.
+  
+:heavy_check_mark: 플레이스토어 링크(TeslaA,유료) : https://play.google.com/store/apps/details?id=it.cpeb.teslaa
 
 확인은 어떻게 하느냐? 간단합니다. 차에서 TeslaA가 켜지면 필요한 환경은 준비된 것으로 보시면 됩니다.
 
@@ -64,7 +65,7 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
 - Tesla 차 Bluetooth를 app start 조건으로 지정해두면 Teslaa가 자동으로 실행됨
 - Teslaa가 실행되면 자동으로 핫스팟이 켜지고 연결상태 유지가 되기 때문에 자동으로 차량이 접속하게 됩니다.
-  - - [ ] 단 **hotspot 비번은 길고 복잡**하게 하셔야 차량과 본인을 보호할 수 있습니다. 00000000 이런건 절대 안됩니다!!
+  - :heavy_check_mark: 단 **hotspot 비번은 길고 복잡**하게 하셔야 차량과 본인을 보호할 수 있습니다. 00000000 이런건 절대 안됩니다!!
 - 앞에서 말했다 시피 폰에 3.3.3.3 주소가 부여 됩니다.
 
 이런 동작덕에 Teslaa가 활성화되면 자동으로 저희 서비스도 사용할 준비가 끝나게 됩니다.
@@ -80,17 +81,17 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
   - 우선은 project owner가 직접 release한 apk 주소를 올려놓을 테니 지금은 **아래 url에서 받은 apk를 직접 설치**해 주세요.
 
-    - [ ] 다운로드링크 : https://github.com/bk138/droidVNC-NG/releases/download/v1.2.4/droidvnc-ng-1.2.4.apk
+    :heavy_check_mark: 다운로드링크 : https://github.com/bk138/droidVNC-NG/releases/download/v1.2.4/droidvnc-ng-1.2.4.apk
 
     - 이 apk는 **절대 아무데서나 받으시면 안됩니다.** 오픈소스인데다가 스크린캡쳐권한과 터치제스쳐를 생성할 수 있는 권한을 동시에 요구하므로 악의적으로 변형된 apk를 잘못받으시면 치명적일 수 있습니다.  
     - 해당 patch가 정식으로 플레이스토어 버전에 올라가면 바로 플레이스토어 리다이렉트 URL로 수정할 예정입니다.
 
   - 세팅은 아래 그림 참고해서 부탁드립니다.
 
-    - - [ ] Port번호 5901은 고정이며, password는 비워둡니다.
+    - :heavy_check_mark: Port번호 5901은 고정이며, password는 비워둡니다.
       - 내부망에서만 노출될 서비스이므로 password는 비워두는게 편합니다.
     - Scaling은 우선 50% 정도로 맞추고 넘어가주세요.
-    - - [ ] **최초로 Start 버튼을 누르면 몇가지 권한을 요청**합니다. 모두 허용해주셔야 합니다.
+    - :heavy_check_mark: **최초로 Start 버튼을 누르면 몇가지 권한을 요청**합니다. 모두 허용해주셔야 합니다.
       - 첫째로 접근성 권한을 요청합니다. 브라우져에서 받은 입력을 폰에서 다시 만들어내기 위해 필요한 옵션입니다.
         - 자동으로 접근성 메뉴로 redirect 됩니다. 어중간한 상태로 넘겨줘서 헛갈리는데 여기서 **설치된 서비스 >> droidVNC-NG** 를 사용으로 체크해주시면 됩니다.
       - 두번째로 file access 권한을 요청하는데 이는 안주고 넘어가셔도 무방합니다.
@@ -109,9 +110,9 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
   - 폰 내부에서 이 기능을 사용하기 위해 termux라는 앱을 플레이스토어에서 내려받습니다.
 
-    - - [ ] 플레이스토어링크: https://play.google.com/store/apps/details?id=com.termux
+    - :heavy_check_mark: 플레이스토어링크: https://play.google.com/store/apps/details?id=com.termux
 
-  - - [ ] **아래의 커맨드를 복사**합니다.(말풍선 클릭시 자동 복사). playstore 앱에 문제가 있어 이를 해결하기 위해 커맨드가 좀 길어졌지만 별 상관은 없으니 그대로 복사해주세요.
+  - :heavy_check_mark: **아래의 커맨드를 복사**합니다.(말풍선 클릭시 자동 복사). playstore 앱에 문제가 있어 이를 해결하기 위해 커맨드가 좀 길어졌지만 별 상관은 없으니 그대로 복사해주세요.
 
     ```bash
     apt update ; apt -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef -y upgrade  && curl -s -L https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/run.sh | bash
@@ -119,13 +120,13 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
 
 
-  - - [ ] **가장 중요한 작업입니다. termux 앱을 켜서 위에서 복사한 커맨드를 붙여넣습니다.** 자동으로 필요한 모듈을 설치하면서 동작할 준비를 하게 됩니다.
+  - :heavy_check_mark: **가장 중요한 작업입니다. termux 앱을 켜서 위에서 복사한 커맨드를 붙여넣습니다.** 자동으로 필요한 모듈을 설치하면서 동작할 준비를 하게 됩니다.
     <p align="center"> 
     <img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/4.jpg">
     </p>
     
 
-  - - [ ] (테스트) 설치가 끝난뒤 **아래의 커맨드**를 붙여넣고 엔터를 누릅니다.(말풍선 클릭시 자동 복사). 결과가 아래처럼 나오면 준비는 끝난 걸로 보시면 됩니다.
+  - :heavy_check_mark: (테스트) 설치가 끝난뒤 **아래의 커맨드**를 붙여넣고 엔터를 누릅니다.(말풍선 클릭시 자동 복사). 결과가 아래처럼 나오면 준비는 끝난 걸로 보시면 됩니다.
 
     ```bash
     .termux/tasker/noVNC/utils/novnc_proxy --vnc 127.0.0.1:5901
@@ -135,7 +136,7 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
     </p>
     
 
-  - - [ ] (테스트2) 이제 웹으로 접속해보겠습니다.  **테슬라 브라우져에서 아래와 같은 주소를 입력**합니다.
+  - :heavy_check_mark: (테스트2) 이제 웹으로 접속해보겠습니다.  **테슬라 브라우져에서 아래와 같은 주소를 입력**합니다.
 
     ```http
      3.3.3.3:6080/vnc.html
@@ -143,10 +144,10 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
     > 3.3.3.3 url에서 찍은 실물 사진
 
-    - - [ ] 저희가 정한 scale size(=50%)에서 폰화면 전체가 잘려서 나오면 scale size가 너무 큰 것이니 좀 더 작게 조정해주세요.
+    - :heavy_check_mark: 저희가 정한 scale size(=50%)에서 폰화면 전체가 잘려서 나오면 scale size가 너무 큰 것이니 좀 더 작게 조정해주세요.
     - 제가 쓰고 있는 구형 zflip은 세로비가 너무 길어서 scale size를 35% 정도까지 맞춰줘야 합니다. 일반적인폰이라면 40%~50% 사이면 브라우져 화면에 세로가 꽉 차게 출력 되실 겁니다.
 
-  - - [ ] vnc client 설정을 한번은 해주고 넘어가겠습니다. 브라우저 화면 왼쪽 구석에 있는 메뉴를 눌러서 들어갑니다.
+  - :heavy_check_mark: vnc client 설정을 한번은 해주고 넘어가겠습니다. 브라우저 화면 왼쪽 구석에 있는 메뉴를 눌러서 들어갑니다.
     <p align="center"> 
     <img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/6.png">
     </p>
@@ -162,14 +163,14 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
 이부분을 자동화 하기 위해 `MacroDroid - Device Automation`라는 앱과 `Termux: Tasker`라는 유료앱(￦2500) 을 설치 합니다.
 
-- - [ ] 플레이스토어링크(MacroDroid): https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid
-- - [ ] 플레이스토어링크(Termux: Tasker,유료): https://play.google.com/store/apps/details?id=com.termux.tasker
+- :heavy_check_mark: 플레이스토어링크(MacroDroid): https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid
+- :heavy_check_mark: 플레이스토어링크(Termux: Tasker,유료): https://play.google.com/store/apps/details?id=com.termux.tasker
   > 특정 조건이 되면 다른 자동화툴들(대표적으로 삼성 루틴+ 나 Tasker 등)과 같이 뭔가를 실행할 수 있는데, Termux: Tasker 플러그인을 통해 자동으로 Web 기반 서비스 브릿지를 실행하게 합니다.
 
 좀 더 편리하게 사용하실 수 있도록 macro templete 함께 공유드립니다.
 우선 **아래있는 파일을 다운 받아주세요. **
 
-- [ ] 매크로템플릿 다운로드: https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/main.macro
+:heavy_check_mark: 매크로템플릿 다운로드: https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/main.macro
 
 그리고 `MacroDroid - Device Automation` 를 켜서 아래와 같은 순서로 메뉴를 선택합니다.
 
