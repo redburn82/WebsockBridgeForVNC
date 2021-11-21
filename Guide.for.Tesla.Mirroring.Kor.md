@@ -168,7 +168,7 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
   > 특정 조건이 되면 다른 자동화툴들(대표적으로 삼성 루틴+ 나 Tasker 등)과 같이 뭔가를 실행할 수 있는데, Termux: Tasker 플러그인을 통해 자동으로 Web 기반 서비스 브릿지를 실행하게 합니다.
 
 좀 더 편리하게 사용하실 수 있도록 macro templete 함께 공유드립니다.
-우선 **아래있는 파일을 다운 받아주세요. **
+우선 **아래있는 파일을 다운 받아주세요.**
 
 :heavy_check_mark: 매크로템플릿 다운로드: https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/main.macro
 
