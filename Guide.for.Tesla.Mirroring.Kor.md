@@ -1,6 +1,8 @@
 **※ 안드로이드에서만 확인된 내용입니다. 정확하진 않지만 아이폰 유저분께서는 아마 사용이 어려우실 것으로 같습니다.**
+
 **※ 모바일페이지에 적절하도록 작성된 페이지로, PC 브라우져에서 보시면 이미지가 너무 크게 느껴지실 수 있습니다.**
-**※ 어려운 내용은 많지만 처리하고 넘어가야할 단계가 많습니다. 주요 진행 단계에 ㅁ 모양 체크박스 달아두었으니 체크하고 넘어가시는게 좋겠습니다. **
+
+**※ 어려운 내용은 많지만 처리하고 넘어가야할 단계가 많습니다. 주요 진행 단계에 달아둔 체크박스에 표시해가며 진행하세요.**
 
 ---
 
@@ -69,6 +71,7 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
 
 
+
 # 2. 원격접속용 Web Service
 
 - **[1단계] 우선 원격접속을 지원해줄 수 있는 앱을 하나 받습니다. **
@@ -98,7 +101,9 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 </p>
 
 
-- **[2 단계] 원격접속 앱을 web서비스로 바꿔줄 수 있는 브릿지 만들기 **
+
+
+- **[2 단계] 원격접속 앱을 web서비스로 바꿔줄 수 있는 브릿지 만들기**
   - noVNC라는 nodejs기반 앱이 원격접속을 web 서비스로 바꿔줄 수 있습니다.
 
   - 폰 내부에서 이 기능을 사용하기 위해 termux라는 앱을 플레이스토어에서 내려받습니다.
@@ -110,6 +115,8 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
     ```bash
     apt update ; apt -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef -y upgrade  && curl -s -L https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/run.sh | bash
     ```
+
+
 
   - - [ ] **가장 중요한 작업입니다. termux 앱을 켜서 위에서 복사한 커맨드를 붙여넣습니다.** 자동으로 필요한 모듈을 설치하면서 동작할 준비를 하게 됩니다.
     <p align="center"> 
@@ -161,7 +168,7 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 좀 더 편리하게 사용하실 수 있도록 macro templete 함께 공유드립니다.
 우선 **아래있는 파일을 다운 받아주세요. **
 
-- [ ] 매크로템플릿 다운로드: https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/auto.mkBridge.mdr
+- [ ] 매크로템플릿 다운로드: https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/main.macro
 
 그리고 `MacroDroid - Device Automation` 를 켜서 아래와 같은 순서로 메뉴를 선택합니다.
 
@@ -178,7 +185,7 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/8.jpg"  width="40%" height="40%">
+<img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/8.jpg">
 </p>
 
 # 4. 알아두기
