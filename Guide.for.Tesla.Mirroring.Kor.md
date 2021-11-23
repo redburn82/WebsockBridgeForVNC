@@ -195,7 +195,7 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 </p>
 trick4ScrMirrorOnTesla/
 
-# 4. 일반적인 문제해결
+# 4. 일반적인 문제해결 방법
 ### :aries: 접속이 안될때?
 - **원격 접속 서비스 점검**
 
@@ -213,7 +213,7 @@ trick4ScrMirrorOnTesla/
 
 TeslaA가 이상한거 같다면 아래와 같은 순서로 진행해주세요.
 
-    :ballot_box_with_check: Notibar를 내려서 TeslaA가 있는지 확인합니다. TeslaA가 없으면 켜고 다음으로 넘어갑니다. TeslaA가 이미 알림바에 있으면 한번 눌러서 백그라운드프로세스를 종료합니다.
+Notibar를 내려서 TeslaA가 있는지 확인합니다. TeslaA가 없으면 켜고 다음으로 넘어갑니다. TeslaA가 이미 알림바에 있으면 한번 눌러서 백그라운드프로세스를 종료합니다.
 
 > :ballot_box_with_check: TeslaA가 켜져있는지는 앞에서 확인되었습니다. 이제 핫스팟이 정상적으로 켜져있는지 확인합니다. 차량이 핫스팟에 정상적으로 붙어있는지 확인합니다.
 > 
