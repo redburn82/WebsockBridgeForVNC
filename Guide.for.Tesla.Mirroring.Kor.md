@@ -166,32 +166,34 @@ Tesla 내장 브라우저를 이용하는 **유사 미러링**을 구현하는 �
 - :heavy_check_mark: 플레이스토어링크(MacroDroid): https://play.google.com/store/apps/details?id=com.arlosoft.macrodroid
 - :heavy_check_mark: 플레이스토어링크(Termux: Tasker,유료): https://play.google.com/store/apps/details?id=com.termux.tasker
 
-좀 더 편리하게 사용하실 수 있도록 macro templete 함께 공유드립니다.
+좀 더 편리하게 사용하실 수 있도록 macro templete 함께 공유드립니다. 반드시 두개 모두 설치하세요. 
 우선 **아래있는 파일을 다운 받아주세요.**
 
-:heavy_check_mark: 매크로템플릿 다운로드: https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/main.macro
+:heavy_check_mark: 매크로템플릿 다운로드: https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/main-1.macro
 
-:heavy_check_mark: 파일 다운 받았을 때 '열기'링크가 뜨고 링크 눌렀을 때 `MacroDroid - Device Automation` 앱(뭔가 알록달록합니다)가 바로 뜨시는 분들은 화면 오른쪽 아래 "+"같은 둥근 메뉴를 눌러주고 바로 아래의 import 단계를 넘어가시면 됩니다.
+:heavy_check_mark: 매크로템플릿 다운로드: https://github.com/redburn82/trick4ScrMirrorOnTesla/releases/download/V0.1.0/clear.macro
+
+:heavy_check_mark: 파일 다운 받았을 때 '열기'링크가 뜨고 링크 눌렀을 때 `MacroDroid - Device Automation` 앱(뭔가 알록달록합니다)가 바로 뜨시는 분들은 화면 오른쪽 아래 "+"같은 둥근 메뉴를 눌러주고 바로 아래의 import 단계를 넘어가시면 됩니다. 
 
 :heavy_check_mark: 만약에 바로 열기로 연결이 안되시는 분들은 `MacroDroid - Device Automation` 를 켜서 아래와 같은 순서로 메뉴를 선택합니다.
 
-방금 다운받았던 어쩔수 없습니다. 아래와 같이 매뉴얼로 `main.macro` 파일을 import 합니다.
+방금 다운받았던 어쩔수 없습니다. 아래와 같이 매뉴얼로 `main-1.macro 및 clear` 파일들을 import 합니다.
 <p align="center">
 <img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/7.png">
 </p>
 
-저같은 경우는 아래와 같이 세팅되어 있습니다.
+:heavy_check_mark: 제 템플릿을 그대로 넘겨드렸기 때문에 아래의 두가지 항목은 조정해주셔야 합니다.
 
-- (조건) 무선/유선 충전중 + Tesla 차량 bluetooth에 연결
-  - **Device Connected에는 실제로 운영하시는 Tesla 차량 bluetooth로 바꿔주세요.**
-- (실행)  Termux: Tasker로 브릿지 실행 / DroidVNC-NG 앱 켜기
-  - DroidVNC-NG 앱 켜기는 빼셔도 됩니다. 저같은 경우는 screen capture 권한을 쓸때만 주려고 항상 꺼두기 때문에 사용전에 앱을 켜서 새로 Start를 눌러주는 편입니다.
+- "Tesla Model Y 가족여행차"는 딸아이가 붙여준 제 차이름입니다. 당연히 **현재 운용하시는 차량 BT로 바꾸셔야 합니다**. 세팅하시는 스크립트 두 개 모두 바꾸셔야 합니다.
+- `clear.macro`라는 파일 세팅하시면 Set Screen Timeout이 있습니다. 무제한으로 풀엇던 Screen Timeout을 지정한 값으로 되돌립니다. 원복이 아니기 때문에 30초든 1분이든 값을 지정해주셔야 합니다. 현재 스마트폰에서 사용하시는 디스플레이 타임아웃과 주기를 맞춰주시면 됩니다.
+
+> 제대로 세팅되었는지 화면은 아래쪽 탭에 Macros 를 눌렀을 때 clear와 main이 떠있는지 확인하시면 됩니다. 세부 설정에 대한 차후 변경도 여기서 각 매크로 찍어서 진행하시면 됩니다. 각 매크로를 눌러보면 아래와 같은 화면이 뜹니다. 빨간색이 조건을 거는 부분이고 파란색이 실제로 수행할 작업입니다. 예시는 구형 매크로로 Screen timeout이 아직 포함되지 않은 버전입니다. 임포트 하신 것과 내용이 조금 달라도 당황하실 필요 없습니다.
 
 
 <p align="center">
 <img src="https://raw.githubusercontent.com/redburn82/trick4ScrMirrorOnTesla/main/Res/8.jpg">
 </p>
-
+trick4ScrMirrorOnTesla/
 
 # 4. 일반적인 문제해결
 ### :aries: 접속이 안될때?
